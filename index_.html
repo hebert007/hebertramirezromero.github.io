@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hebert Ramírez Romero — Executive Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#090D16',
+                            card: '#0D1322',
+                            border: '#1E293B',
+                            borderLight: '#334155',
+                            textMain: '#FFFFFF',
+                            textMuted: '#94A3B8',
+                            accent: '#38BDF8',
+                            accentHover: '#60A5FA'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Helvetica Neue', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for minimal icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #090D16;
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #090D16;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1E293B;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155;
+        }
+    </style>
+</head>
+<body class="bg-[#090D16] text-white selection:bg-[#38BDF8] selection:text-[#090D16]">
+
+    <!-- 00 — HEADER / NAVBAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#090D16]/90 backdrop-blur-md border-b border-[#1E293B]">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#hero" class="text-sm font-medium tracking-tight text-white hover:text-[#38BDF8] transition-colors">
+                Hebert Ramírez Romero<span class="text-[#38BDF8]">.</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-xs font-medium text-[#94A3B8]">
+                <a href="#impacto" class="hover:text-white transition-colors">Impacto</a>
+                <a href="#casos" class="hover:text-white transition-colors">Casos</a>
+                <a href="#trayectoria" class="hover:text-white transition-colors">Trayectoria</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <a href="https://www.linkedin.com/in/hebertramirezromero" target="_blank" rel="noopener noreferrer" 
+                   class="inline-flex items-center space-x-2 text-xs font-medium text-white border border-[#334155] hover:border-[#38BDF8] px-4 py-2 rounded transition-all duration-200">
+                    <span>LinkedIn</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- 01 — HERO -->
+        <section id="hero" class="relative min-h-[90vh] flex flex-col justify-between max-w-7xl mx-auto px-6 pt-12 pb-16 border-b border-[#1E293B]">
+            <div class="space-y-4">
+                <div class="text-[11px] font-semibold uppercase tracking-widest text-[#94A3B8]">
+                    Liderazgo Ejecutivo — Servicios Financieros
+                </div>
+                
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white max-w-5xl leading-[1.08]">
+                    Hebert Ramírez Romero
+                </h1>
+
+                <div class="text-base sm:text-lg font-normal text-[#94A3B8] pt-1">
+                    Transformación Tecnológica | Banca | Pagos
+                </div>
+
+                <p class="text-xl sm:text-2xl font-light text-[#FFFFFF] max-w-4xl pt-6 leading-relaxed">
+                    Lidero transformaciones tecnológicas complejas conectando estrategia, negocio, tecnología y ejecución.
+                </p>
+
+                <div class="text-xs sm:text-sm font-medium text-[#94A3B8] pt-2 flex items-center space-x-2 flex-wrap">
+                    <span>18 años</span>
+                    <span class="text-[#38BDF8]">•</span>
+                    <span>Banking Technology</span>
+                    <span class="text-[#38BDF8]">•</span>
+                    <span>Core Banking</span>
+                    <span class="text-[#38BDF8]">•</span>
+                    <span>Payments</span>
+                    <span class="text-[#38BDF8]">•</span>
+                    <span>Digital Transformation</span>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between pt-16 gap-6">
+                <div class="flex items-center space-x-4">
+                    <a href="#casos" class="inline-flex items-center space-x-2 bg-white text-[#090D16] hover:bg-[#F8FAFC] text-xs font-semibold px-6 py-3 rounded transition-colors">
+                        <span>Ver casos de transformación</span>
+                        <i class="fa-solid fa-arrow-down text-[10px]"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/hebertramirezromero" target="_blank" rel="noopener noreferrer" 
+                       class="inline-flex items-center space-x-2 border border-[#334155] text-white hover:border-[#38BDF8] text-xs font-semibold px-6 py-3 rounded transition-colors">
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+                
+                <div class="text-xs font-mono text-[#94A3B8] tracking-widest">
+                    01 / 08
+                </div>
+            </div>
+        </section>
+
+        <!-- 02 — EXECUTIVE SNAPSHOT -->
+        <section id="impacto" class="py-24 max-w-7xl mx-auto px-6 border-b border-[#1E293B]">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <span class="text-[11px] font-semibold uppercase tracking-widest text-[#94A3B8]">02 / Alcance Ejecutivo</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white mt-2">Escala de transformación</h2>
+                </div>
+                <div class="text-xs text-[#94A3B8] max-w-xs mt-4 md:mt-0">
+                    Experiencia en la intersección de estrategia, plataformas bancarias y ejecución de programas complejos.
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[#1E293B] border border-[#1E293B] rounded-lg overflow-hidden">
+                <!-- Card 1 -->
+                <div class="bg-[#090D16] p-8 sm:p-10 flex flex-col justify-between hover:bg-[#0D1322] transition-colors">
+                    <div>
+                        <div class="text-5xl sm:text-6xl font-bold text-white tracking-tight">18+</div>
+                        <div class="text-xs font-semibold uppercase tracking-wider text-[#38BDF8] mt-2">años de experiencia</div>
+                    </div>
+                    <p class="text-xs text-[#94A3B8] mt-6">Transformación tecnológica en servicios financieros</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-[#090D16] p-8 sm:p-10 flex flex-col justify-between hover:bg-[#0D1322] transition-colors">
+                    <div>
+                        <div class="text-5xl sm:text-6xl font-bold text-white tracking-tight">USD 12M</div>
+                        <div class="text-xs font-semibold uppercase tracking-wider text-[#38BDF8] mt-2">portafolio EPMO</div>
+                    </div>
+                    <p class="text-xs text-[#94A3B8] mt-6">Gestión ejecutiva de iniciativas estratégicas</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-[#090D16] p-8 sm:p-10 flex flex-col justify-between hover:bg-[#0D1322] transition-colors">
+                    <div>
+                        <div class="text-5xl sm:text-6xl font-bold text-white tracking-tight">50+</div>
+                        <div class="text-xs font-semibold uppercase tracking-wider text-[#38BDF8] mt-2">iniciativas estratégicas</div>
+                    </div>
+                    <p class="text-xs text-[#94A3B8] mt-6">Priorización, gobierno y entrega</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-[#090D16] p-8 sm:p-10 flex flex-col justify-between hover:bg-[#0D1322] transition-colors">
+                    <div>
+                        <div class="text-5xl sm:text-6xl font-bold text-white tracking-tight">100+</div>
+                        <div class="text-xs font-semibold uppercase tracking-wider text-[#38BDF8] mt-2">plataformas bancarias críticas</div>
+                    </div>
+                    <p class="text-xs text-[#94A3B8] mt-6">Evolución de infraestructura y servicios</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-[#090D16] p-8 sm:p-10 flex flex-col justify-between hover:bg-[#0D1322] transition-colors">
+                    <div>
+                        <div class="text-5xl sm:text-6xl font-bold text-white tracking-tight">9,000</div>
+                        <div class="text-xs font-semibold uppercase tracking-wider text-[#38BDF8] mt-2">cajeros automáticos</div>
+                    </div>
+                    <p class="text-xs text-[#94A3B8] mt-6">Contexto de autoservicio y pagos</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-[#090D16] p-8 sm:p-10 flex flex-col justify-between hover:bg-[#0D1322] transition-colors">
+                    <div>
+                        <div class="text-5xl sm:text-6xl font-bold text-white tracking-tight">12 + 40+</div>
+                        <div class="text-xs font-semibold uppercase tracking-wider text-[#38BDF8] mt-2">equipo directo / matricial</div>
+                    </div>
+                    <p class="text-xs text-[#94A3B8] mt-6">Liderazgo de equipos multidisciplinarios</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03 — ÁREAS DE IMPACTO -->
+        <section class="py-24 max-w-7xl mx-auto px-6 border-b border-[#1E293B]">
+            <div class="mb-16">
+                <span class="text-[11px] font-semibold uppercase tracking-widest text-[#94A3B8]">03 / Áreas de Impacto</span>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white mt-2">Donde aporto liderazgo</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+                <!-- Area 1 -->
+                <div class="border-t border-[#1E293B] pt-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-xl font-semibold text-white">Transformación Tecnológica</h3>
+                            <span class="text-xs font-mono text-[#38BDF8]">01</span>
+                        </div>
+                        <p class="text-sm text-[#94A3B8] mt-3 leading-relaxed">
+                            Evolución de arquitecturas y adopción de modelos operativos ágiles y eficientes.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Area 2 -->
+                <div class="border-t border-[#1E293B] pt-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-xl font-semibold text-white">Payments & Financial Infrastructure</h3>
+                            <span class="text-xs font-mono text-[#38BDF8]">02</span>
+                        </div>
+                        <p class="text-sm text-[#94A3B8] mt-3 leading-relaxed">
+                            Orquestación de sistemas transaccionales críticos, alta disponibilidad y ecosistemas de pagos modernos.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Area 3 -->
+                <div class="border-t border-[#1E293B] pt-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-xl font-semibold text-white">Core Banking & Digital Banking</h3>
+                            <span class="text-xs font-mono text-[#38BDF8]">03</span>
+                        </div>
+                        <p class="text-sm text-[#94A3B8] mt-3 leading-relaxed">
+                            Modernización y migración de plataformas bancarias troncales sin impacto operativo.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Area 4 -->
+                <div class="border-t border-[#1E293B] pt-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-xl font-semibold text-white">Enterprise Program Leadership</h3>
+                            <span class="text-xs font-mono text-[#38BDF8]">04</span>
+                        </div>
+                        <p class="text-sm text-[#94A3B8] mt-3 leading-relaxed">
+                            Dirección de EPMOs complejas con presupuestos masivos y equipos multidisciplinarios.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 04 — CASOS DE TRANSFORMACIÓN -->
+        <section id="casos" class="py-24 max-w-7xl mx-auto px-6 border-b border-[#1E293B]">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <span class="text-[11px] font-semibold uppercase tracking-widest text-[#94A3B8]">04 / Casos de Transformación</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white mt-2">Contextos de liderazgo</h2>
+                </div>
+                <div class="text-xs text-[#94A3B8] max-w-xs mt-4 md:mt-0">
+                    Una mirada al foco y al alcance de los programas, sin atribuir resultados no publicados.
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Caso 1 -->
+                <div class="border border-[#1E293B] bg-[#0D1322] rounded-lg p-6 sm:p-8 hover:border-[#334155] transition-all">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+                        <div class="lg:col-span-3">
+                            <span class="text-xs font-semibold tracking-wider text-[#38BDF8] uppercase">Santander</span>
+                            <h3 class="text-lg font-bold text-white mt-1">Transformación de autoservicio y pagos</h3>
+                        </div>
+                        <div class="lg:col-span-9">
+                            <ul class="space-y-2 text-sm text-[#94A3B8]">
+                                <li class="flex items-start">
+                                    <span class="text-[#38BDF8] mr-2">•</span>
+                                    <span>Canales de autoservicio y dispositivos de atención.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-[#38BDF8] mr-2">•</span>
+                                    <span>Capacidades de pago y sistemas transaccionales.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-[#38BDF8] mr-2">•</span>
+                                    <span>Conexión entre operación bancaria y experiencia de cliente.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Caso 2 -->
+                <div class="border border-[#1E293B] bg-[#0D1322] rounded-lg p-6 sm:p-8 hover:border-[#334155] transition-all">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+                        <div class="lg:col-span-3">
+                            <span class="text-xs font-semibold tracking-wider text-[#38BDF8] uppercase">Citibanamex</span>
+                            <h3 class="text-lg font-bold text-white mt-1">Enterprise Technology Transformation</h3>
+                        </div>
+                        <div class="lg:col-span-9">
+                            <ul class="space-y-2 text-sm text-[#94A3B8]">
+                                <li class="flex items-start">
+                                    <span class="text-[#38BDF8] mr-2">•</span>
+                                    <span>Alineación entre estrategia, negocio y tecnología.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-[#38BDF8] mr-2">•</span>
+                                    <span>Gobierno de portafolio y mecanismos de priorización.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-[#38BDF8] mr-2">•</span>
+                                    <span>Ejecución coordinada de iniciativas empresariales.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Caso 3 -->
+                <div class="border border-[#1E293B] bg-[#0D1322] rounded-lg p-6 sm:p-8 hover:border-[#334155] transition-all">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+                        <div class="lg:col-span-3">
+                            <span class="text-xs font-semibold tracking-wider text-[#38BDF8] uppercase">Santander</span>
+                            <h3 class="text-lg font-bold text-white mt-1">Digital Lending & Credit Origination</h3>
+                        </div>
+                        <div class="lg:col-span-9">
+                            <ul class="space-y-2 text-sm text-[#94A3B8]">
+                                <li class="flex items-start">
+                                    <span class="text-[#38BDF8] mr-2">•</span>
+                                    <span>Procesos de originación digital de crédito.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-[#38BDF8] mr-2">•</span>
+                                    <span>Articulación entre negocio, tecnología y operación.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-[#38BDF8] mr-2">•</span>
+                                    <span>Evolución de capacidades de lending y credit origination.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 05 — CÓMO LIDERO TRANSFORMACIONES -->
+        <section class="py-24 max-w-7xl mx-auto px-6 border-b border-[#1E293B]">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-4">
+                    <span class="text-[11px] font-semibold uppercase tracking-widest text-[#94A3B8]">05 / Modelo de Liderazgo</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">De la estrategia a resultados sostenibles</h2>
+                    <p class="text-sm text-[#94A3B8] leading-relaxed pt-2">
+                        Un sistema de trabajo que conecta dirección ejecutiva, gobierno y equipos de entrega con las capacidades que sostienen la operación financiera.
+                    </p>
+                </div>
+
+                <div class="lg:col-span-7 space-y-6">
+                    <!-- Flow Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-px bg-[#1E293B] border border-[#1E293B] rounded-lg overflow-hidden">
+                        <div class="bg-[#090D16] p-5">
+                            <span class="text-[10px] font-mono text-[#38BDF8]">01</span>
+                            <div class="text-sm font-semibold text-white mt-1">Estrategia</div>
+                        </div>
+                        <div class="bg-[#090D16] p-5">
+                            <span class="text-[10px] font-mono text-[#38BDF8]">02</span>
+                            <div class="text-sm font-semibold text-white mt-1">Priorización</div>
+                        </div>
+                        <div class="bg-[#090D16] p-5">
+                            <span class="text-[10px] font-mono text-[#38BDF8]">03</span>
+                            <div class="text-sm font-semibold text-white mt-1">Gobierno</div>
+                        </div>
+                        <div class="bg-[#090D16] p-5">
+                            <span class="text-[10px] font-mono text-[#38BDF8]">04</span>
+                            <div class="text-sm font-semibold text-white mt-1">Ejecución</div>
+                        </div>
+                        <div class="bg-[#090D16] p-5">
+                            <span class="text-[10px] font-mono text-[#38BDF8]">05</span>
+                            <div class="text-sm font-semibold text-white mt-1">Adopción</div>
+                        </div>
+                        <div class="bg-[#090D16] p-5">
+                            <span class="text-[10px] font-mono text-[#38BDF8]">06</span>
+                            <div class="text-sm font-semibold text-white mt-1">Resultados</div>
+                        </div>
+                    </div>
+
+                    <!-- Connection Nodes Bar -->
+                    <div class="border border-[#1E293B] bg-[#0D1322] rounded-lg p-4 flex flex-wrap items-center justify-between gap-3">
+                        <span class="text-xs font-semibold text-[#94A3B8] w-full sm:w-auto">Nodo Central:</span>
+                        <div class="flex flex-wrap gap-2 text-xs font-medium text-white">
+                            <span class="px-2.5 py-1 bg-[#1E293B] rounded">Negocio</span>
+                            <span class="px-2.5 py-1 bg-[#1E293B] rounded">Tecnología</span>
+                            <span class="px-2.5 py-1 bg-[#1E293B] rounded">Operaciones</span>
+                            <span class="px-2.5 py-1 bg-[#1E293B] rounded">Riesgo</span>
+                            <span class="px-2.5 py-1 bg-[#1E293B] rounded">Compliance</span>
+                            <span class="px-2.5 py-1 bg-[#1E293B] rounded">Proveedores</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 06 — PERSPECTIVAS -->
+        <section class="py-24 max-w-7xl mx-auto px-6 border-b border-[#1E293B]">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <span class="text-[11px] font-semibold uppercase tracking-widest text-[#94A3B8]">06 / Perspectivas</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white mt-2">Ideas para conversaciones relevantes</h2>
+                </div>
+                <div class="text-xs text-[#94A3B8] max-w-xs mt-4 md:mt-0">
+                    Temas de reflexión profesional. No representan publicaciones atribuidas ni artículos publicados.
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="border border-[#1E293B] bg-[#0D1322] rounded-lg p-6 flex flex-col justify-between hover:border-[#334155] transition-all">
+                    <div>
+                        <div class="flex items-center justify-between text-xs font-mono text-[#94A3B8] mb-3">
+                            <span>P / 01</span>
+                            <span class="text-[10px] text-[#38BDF8]">LinkedIn</span>
+                        </div>
+                        <h3 class="text-base font-semibold text-white leading-snug">Resiliencia en pagos</h3>
+                        <p class="text-xs text-[#94A3B8] mt-3 leading-relaxed">
+                            La continuidad de pagos se diseña como una capacidad de negocio: arquitectura, operación y respuesta deben funcionar como un solo sistema.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-[#1E293B] flex items-center justify-between">
+                        <span class="text-[11px] text-[#94A3B8]">Fecha por confirmar</span>
+                        <a href="https://www.linkedin.com/in/hebertramirezromero" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[#38BDF8] hover:underline">
+                            Leer en LinkedIn →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="border border-[#1E293B] bg-[#0D1322] rounded-lg p-6 flex flex-col justify-between hover:border-[#334155] transition-all">
+                    <div>
+                        <div class="flex items-center justify-between text-xs font-mono text-[#94A3B8] mb-3">
+                            <span>P / 02</span>
+                            <span class="text-[10px] text-[#38BDF8]">LinkedIn</span>
+                        </div>
+                        <h3 class="text-base font-semibold text-white leading-snug">Core banking</h3>
+                        <p class="text-xs text-[#94A3B8] mt-3 leading-relaxed">
+                            Modernizar el core exige gestionar dependencias con precisión y proteger la estabilidad mientras evolucionan las capacidades.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-[#1E293B] flex items-center justify-between">
+                        <span class="text-[11px] text-[#94A3B8]">Fecha por confirmar</span>
+                        <a href="https://www.linkedin.com/in/hebertramirezromero" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[#38BDF8] hover:underline">
+                            Leer en LinkedIn →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="border border-[#1E293B] bg-[#0D1322] rounded-lg p-6 flex flex-col justify-between hover:border-[#334155] transition-all">
+                    <div>
+                        <div class="flex items-center justify-between text-xs font-mono text-[#94A3B8] mb-3">
+                            <span>P / 03</span>
+                            <span class="text-[10px] text-[#38BDF8]">LinkedIn</span>
+                        </div>
+                        <h3 class="text-base font-semibold text-white leading-snug">Gobierno de transformación</h3>
+                        <p class="text-xs text-[#94A3B8] mt-3 leading-relaxed">
+                            Un buen modelo de gobierno convierte prioridades estratégicas en decisiones oportunas, responsabilidades claras y avance visible.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-[#1E293B] flex items-center justify-between">
+                        <span class="text-[11px] text-[#94A3B8]">Fecha por confirmar</span>
+                        <a href="https://www.linkedin.com/in/hebertramirezromero" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[#38BDF8] hover:underline">
+                            Leer en LinkedIn →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="border border-[#1E293B] bg-[#0D1322] rounded-lg p-6 flex flex-col justify-between hover:border-[#334155] transition-all">
+                    <div>
+                        <div class="flex items-center justify-between text-xs font-mono text-[#94A3B8] mb-3">
+                            <span>P / 04</span>
+                            <span class="text-[10px] text-[#38BDF8]">LinkedIn</span>
+                        </div>
+                        <h3 class="text-base font-semibold text-white leading-snug">Crédito digital</h3>
+                        <p class="text-xs text-[#94A3B8] mt-3 leading-relaxed">
+                            La originación digital requiere conectar experiencia, reglas de decisión, datos y operación sin perder control ni trazabilidad.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-[#1E293B] flex items-center justify-between">
+                        <span class="text-[11px] text-[#94A3B8]">Fecha por confirmar</span>
+                        <a href="https://www.linkedin.com/in/hebertramirezromero" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[#38BDF8] hover:underline">
+                            Leer en LinkedIn →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="border border-[#1E293B] bg-[#0D1322] rounded-lg p-6 flex flex-col justify-between hover:border-[#334155] transition-all">
+                    <div>
+                        <div class="flex items-center justify-between text-xs font-mono text-[#94A3B8] mb-3">
+                            <span>P / 05</span>
+                            <span class="text-[10px] text-[#38BDF8]">LinkedIn</span>
+                        </div>
+                        <h3 class="text-base font-semibold text-white leading-snug">Infraestructura crítica</h3>
+                        <p class="text-xs text-[#94A3B8] mt-3 leading-relaxed">
+                            La infraestructura bancaria debe evolucionar con disciplina, seguridad, resiliencia y operación sin condiciones de diseño.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-[#1E293B] flex items-center justify-between">
+                        <span class="text-[11px] text-[#94A3B8]">Fecha por confirmar</span>
+                        <a href="https://www.linkedin.com/in/hebertramirezromero" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[#38BDF8] hover:underline">
+                            Leer en LinkedIn →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="border border-[#1E293B] bg-[#0D1322] rounded-lg p-6 flex flex-col justify-between hover:border-[#334155] transition-all">
+                    <div>
+                        <div class="flex items-center justify-between text-xs font-mono text-[#94A3B8] mb-3">
+                            <span>P / 06</span>
+                            <span class="text-[10px] text-[#38BDF8]">LinkedIn</span>
+                        </div>
+                        <h3 class="text-base font-semibold text-white leading-snug">Entrega de programas</h3>
+                        <p class="text-xs text-[#94A3B8] mt-3 leading-relaxed">
+                            La entrega sostenida surge de una cadencia ejecutiva que integra equipos, riesgos, proveedores y resultados de negocio.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-[#1E293B] flex items-center justify-between">
+                        <span class="text-[11px] text-[#94A3B8]">Fecha por confirmar</span>
+                        <a href="https://www.linkedin.com/in/hebertramirezromero" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[#38BDF8] hover:underline">
+                            Leer en LinkedIn →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 text-[11px] text-[#94A3B8]">
+                Borradores editoriales — no se atribuyen publicaciones reales de LinkedIn.
+            </div>
+        </section>
+
+        <!-- 07 — TRAYECTORIA -->
+        <section id="trayectoria" class="py-24 max-w-7xl mx-auto px-6 border-b border-[#1E293B]">
+            <div class="mb-16">
+                <span class="text-[11px] font-semibold uppercase tracking-widest text-[#94A3B8]">07 / Trayectoria</span>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white mt-2">Experiencia en banca y tecnología</h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Node 1 -->
+                <div class="border-b border-[#1E293B] pb-6 flex flex-col sm:flex-row sm:items-center justify-between">
+                    <div class="flex items-center space-x-6">
+                        <span class="text-xs font-mono text-[#38BDF8]">01</span>
+                        <h3 class="text-lg font-semibold text-white">NTT DATA / Citibanamex</h3>
+                    </div>
+                    <div class="text-sm text-[#94A3B8] mt-2 sm:mt-0">
+                        Technology Transformation Leader
+                    </div>
+                </div>
+
+                <!-- Node 2 -->
+                <div class="border-b border-[#1E293B] pb-6 flex flex-col sm:flex-row sm:items-center justify-between">
+                    <div class="flex items-center space-x-6">
+                        <span class="text-xs font-mono text-[#38BDF8]">02</span>
+                        <h3 class="text-lg font-semibold text-white">Santander</h3>
+                    </div>
+                    <div class="text-sm text-[#94A3B8] mt-2 sm:mt-0">
+                        Liderazgo Tecnológico / Program Management
+                    </div>
+                </div>
+
+                <!-- Node 3 -->
+                <div class="border-b border-[#1E293B] pb-6 flex flex-col sm:flex-row sm:items-center justify-between">
+                    <div class="flex items-center space-x-6">
+                        <span class="text-xs font-mono text-[#38BDF8]">03</span>
+                        <h3 class="text-lg font-semibold text-white">BBVA</h3>
+                    </div>
+                    <div class="text-sm text-[#94A3B8] mt-2 sm:mt-0">
+                        Gestión de Proyectos Críticos
+                    </div>
+                </div>
+
+                <!-- Node 4 -->
+                <div class="border-b border-[#1E293B] pb-6 flex flex-col sm:flex-row sm:items-center justify-between">
+                    <div class="flex items-center space-x-6">
+                        <span class="text-xs font-mono text-[#38BDF8]">04</span>
+                        <h3 class="text-lg font-semibold text-white">Skandia</h3>
+                    </div>
+                    <div class="text-sm text-[#94A3B8] mt-2 sm:mt-0">
+                        Infraestructura y Tecnología
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 text-xs text-[#94A3B8]">
+                Historial completo detallado en el Executive Summary adjunto
+            </div>
+        </section>
+
+        <!-- 08 — CONTACTO -->
+        <section class="py-24 max-w-7xl mx-auto px-6">
+            <div class="max-w-4xl space-y-6">
+                <span class="text-[11px] font-semibold uppercase tracking-widest text-[#94A3B8]">08 / Conversación Ejecutiva</span>
+                <h2 class="text-4xl sm:text-6xl font-bold tracking-tight text-white leading-tight">
+                    ¿Buscas liderazgo para una transformación tecnológica compleja?
+                </h2>
+                <p class="text-base sm:text-lg text-[#94A3B8] leading-relaxed max-w-2xl pt-2">
+                    Estoy abierto a conversaciones sobre posiciones de liderazgo en Technology Transformation, Banking Technology, Payments y Digital Transformation dentro de servicios financieros.
+                </p>
+
+                <div class="pt-6">
+                    <a href="https://www.linkedin.com/in/hebertramirezromero" target="_blank" rel="noopener noreferrer" 
+                       class="inline-flex items-center space-x-3 bg-white text-[#090D16] hover:bg-[#F8FAFC] text-sm font-semibold px-8 py-4 rounded transition-colors">
+                        <span>LinkedIn</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-[#1E293B] py-8">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between text-xs text-[#94A3B8]">
+            <div>HEBERT RAMÍREZ ROMERO · PORTAFOLIO EJECUTIVO</div>
+            <div class="mt-4 sm:mt-0">
+                <a href="#hero" class="hover:text-white transition-colors">Volver arriba ↑</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
